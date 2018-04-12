@@ -1,0 +1,128 @@
+version: 2.0.8
+url: https://qutang.github.io/cutie/
+logo: /images/theme-icon.svg
+slogan: Bazinga, theme cutie!
+# Configure navigation menu, provide a relative link and a path to icon (icon should better be square)
+
+# As long as the name matches the font awesome icon name, you can add even more social links
+# As the tip: the social link can be a QRCODE link
+
+global:
+  comment_system: valine # disqus, valine, gitment
+  scheme: Taurus
+  icon_set: blue-line
+  use_animation: true
+
+page_404:
+  tencent_404: false
+
+post:
+  allow_share: true
+  allow_modification: false
+  allow_commercial: false
+  use_lightgallery: true
+  allow_comment: true
+  toc_level: 2
+  enable_unread_badge: false
+
+changelog:
+  v2.0.8:
+    - Bug fixes
+    - Announcement will only be shown when visitor first sees it
+    - Automate unread badge and post version management. No need to manually update <code>version</code> variable, set variable <code>enable_unread_badge</code> to <code>true</code> or <code>false</code> instead.
+  v2.0.7:
+    - Auto hide/show of header and fotter during scrolling
+    - Redesign of announcement, supporting both post annoucement and site announcement
+    - No need to add search page yourself
+    - No need to add 404 page yourself
+    - Add support to use tencent 404 charity page
+    - Change search from Google to in-site search
+  v2.0.6-beta:
+    - Bug fixes
+  v2.0.5-beta:
+    - Support animation
+    - Support post copyright
+    - Support light gallery zooming
+    - Support post comment and visit counting
+    - Support light gallery for all images in a post
+    - Group posts by month adaptively in archive page
+
+libs:
+  noty:
+    name: noty.js notification library
+    url: https://ned.im/noty/
+    css: /libs/noty/lib/noty.css
+    js_min: /libs/noty/lib/noty.min.js
+    js: /libs/noty/lib/noty.js
+  tippy:
+    name: tippy.js tooltip library
+    url: https://atomiks.github.io/tippyjs/
+    js: /libs/tippy.js/dist/tippy.all.js
+    js_min: /libs/tippy.js/dist/tippy.all.min.js
+  headroom:
+    name: headroom.js
+    url: http://wicky.nillia.ms/headroom.js/
+    js: /libs/headroom.js/dist/headroom.js
+    js_min: /libs/headroom.js/dist/headroom.min.js
+  lightgallery:
+    name: lightgallery.js
+    url: https://sachinchoolur.github.io/lightgallery.js/
+    js: /libs/lightgallery.js/dist/js/lightgallery.js
+    js_min: /libs/lightgallery.js/dist/js/lightgallery.min.js
+    css: /libs/lightgallery.js/dist/css/lightgallery.css
+    css_min: /libs/lightgallery.js/dist/css/lightgallery.min.css
+  lgzoom:
+    name: lightgallery.js zoom plugin
+    url: https://sachinchoolur.github.io/lightgallery.js/
+    js: /libs/lg-zoom/dist/lg-zoom.js
+    js_min: /libs/lg-zoom/dist/lg-zoom.min.js
+  jquery:
+    name: jQuery library
+    url: https://jquery.com/
+    js: /libs/jquery/dist/jquery.js
+    js_min: /libs/jquery/dist/jquery.min.js
+  gitment:
+    name: gitment comment system
+    url: https://github.com/imsun/gitment
+    js: /libs/gitment/dist/gitment.browser.js
+    js_min: /libs/gitment/dist/gitment.browser.js
+    css: /libs/gitment/style/default.css
+  valine:
+    name: valine comment system
+    url: https://valine.js.org/
+    js_cdn: //unpkg.com/valine/dist/Valine.min.js
+  leancloud:
+    name: leancloud BAAS
+    url: https://leancloud.cn/
+    js_cdn: //cdn1.lncld.net/static/js/3.6.4/av-min.js
+  mathjax:
+    name: mathjax library
+    url: https://www.mathjax.org/
+    js_cdn: https://cdnjs.cloudflare.com/ajax//libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML
+  jscookie:
+    name: "js-cookie.js: A javascript cookie manipulation library"
+    url: https://github.com/js-cookie/js-cookie
+    js_cdn: https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js
+    js: /libs/js-cookie/src/js.cookie.js
+  fontawesome:
+    name: fontawesome
+    url: https://fontawesome.com/
+    js_cdn: https://use.fontawesome.com/releases/v5.0.6/js/all.js
+  fuse:
+    name: "fuse.js: A javascript fuzzy search library"
+    url: http://fusejs.io/
+    js_min: /libs/fuse.js/dist/fuse.min.js
+    js: /libs/fuse.js/dist/fuse.js
+  jshashes:
+    name: "hashes.js: A javascript hashing library"
+    url: https://github.com/h2non/jshashes
+    js_min: /libs/jshashes/hashes.min.js
+    js: /libs/jshashes/hashes.js
+  loadjs:
+    name: "loadjs.js: A javascript dependency management library"
+    url: https://github.com/muicss/loadjs
+    js_min: /libs/loadjs/dist/loadjs.min.js
+    js: /libs/loadjs/dist/loadjs.js
+  
+  
+  
