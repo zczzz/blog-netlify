@@ -24,7 +24,7 @@ post:
   allow_modification: false
   allow_commercial: false
   use_lightgallery: true
-  allow_comment: true
+  allow_comment: false
   toc_level: 2
   enable_unread_badge: false
 
