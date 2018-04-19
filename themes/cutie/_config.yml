@@ -24,9 +24,15 @@ post:
   allow_modification: false
   allow_commercial: false
   use_lightgallery: true
-  allow_comment: false
+  allow_comment: true
   toc_level: 2
   enable_unread_badge: false
+
+# valine configuration
+valine:
+  appId: m6Ko0jyFfdRo710mbgopOYpE-gzGzoHsz
+  appKey: o8Yfsa0bYi8jfzRT2ORVz07S
+  placeholder:
 
 changelog:
   v2.0.8:
