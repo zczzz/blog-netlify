@@ -33,6 +33,7 @@ gitment:
   client_id: 87eb10f9d0dc4da6eea3
   client_secret: c334c6407147b8a5278b0372e43a9b84c979f36c
   owner: https://github.com/zczzz
+  repo: https://github.com/zczzz/blog-netlify.git
 
 changelog:
   v2.0.8:
