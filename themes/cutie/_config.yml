@@ -32,7 +32,7 @@ post:
 valine:
   appId: m6Ko0jyFfdRo710mbgopOYpE-gzGzoHsz
   appKey: o8Yfsa0bYi8jfzRT2ORVz07S
-  placeholder:
+  placeholder: 发表你的评论吧～～
 
 changelog:
   v2.0.8:
