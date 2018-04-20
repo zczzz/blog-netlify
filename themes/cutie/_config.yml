@@ -1,4 +1,4 @@
-version: 2.0.8
+version: 2.0.10
 url: https://qutang.github.io/cutie/
 logo: /images/me.png
 slogan: To be a better me!
@@ -35,10 +35,20 @@ valine:
   placeholder: 快发表你的评论吧～～
 
 changelog:
+  v2.0.10:
+    - Import bug fix when parsing theme configuration (recommend to update)
+    - Polish search page
+    - Add Italian translation (contributed by <a href='https://github.com/Fastbyte01'>@fastbyte01</a>)
+  v2.0.9:
+    - Change primary font to Segoe UI
+    - Optimize animation
+    - Adjust appearance
+    - Bug fix
   v2.0.8:
     - Bug fixes
     - Announcement will only be shown when visitor first sees it
     - Automate unread badge and post version management. No need to manually update <code>version</code> variable, set variable <code>enable_unread_badge</code> to <code>true</code> or <code>false</code> instead.
+    - Optimize post visit and comment counts (reduce network requests)
   v2.0.7:
     - Auto hide/show of header and fotter during scrolling
     - Redesign of announcement, supporting both post annoucement and site announcement

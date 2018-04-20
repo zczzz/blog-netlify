@@ -1,20 +1,20 @@
 <script type='text/javascript'>
-{% set enable_unread_badge_all = site.data.cutie.post.enable_unread_badge | default(theme.post.enable_unread_badge) %}
+{% set enable_unread_badge = parse_config([post.enable_unread_badge, site.data.cutie.post.enable_unread_badge, theme.post.enable_unread_badge]) %}
   {% if is_home() || is_archive() || is_tag() || is_category() %}
     loadjs(['{{ theme.libs.jshashes.js_min }}', '{{ theme.libs.jscookie.js }}', '/js/post.v2.js'], 'post-version');
     loadjs.ready('post-version', {
       success: function(){
         {% for post in page.posts %}
           {% set id = hashit(url_for(post.path)) %}
-          {% if post.enable_unread_badge | default(enable_unread_badge_all) %}
+          {% if enable_unread_badge %}
           // show/hide post unread badage
           var postLinks = document.querySelectorAll('#{{ id }} .Card-title a, #{{ id }} .Card-excerpt a, #{{ id }} .Card-figure a');
           new Postv2('{{ id }}').showUnreadNotification('{{ hashit(trim(strip_html_and_whitespaces(post.content))) }}', function(){
             var postBadge = document.querySelector('#{{ id }} mark.Card-badge');
-            $(postBadge).show();
+            $(postBadge).fadeIn();
           }, function(){
             var postBadge = document.querySelector('#{{ id }} mark.Card-badge');
-            $(postBadge).hide();
+            $(postBadge).fadeOut();
           }); 
           // update cookie upon click the post and hide badge immediately
           for(var i = 0;i < postLinks.length; i++){
@@ -22,13 +22,13 @@
               new Postv2('{{ id }}').update('{{ hashit(trim(strip_html_and_whitespaces(post.content))) }}', function(){
                 console.log('called');
                 var postBadge = document.querySelector('#{{ id }} mark.Card-badge');
-                $(postBadge).hide();
+                $(postBadge).fadeOut();
               });
             }
           }
           {% else %}
             var postBadge = document.querySelector('#{{ id }} mark.Card-badge');
-            $(postBadge).hide();
+            $(postBadge).fadeOut();
             
           {% endif %}
         {% endfor %}
