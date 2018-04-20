@@ -3,7 +3,7 @@
 <h1>{{ __('post.comment') }}</h1>
 {% if comment_system === 'valine' %}
   
-  {% if default(site.data.cutie.valine.appId) %}
+  {% if site.data.cutie.valine.appId %}
     <div id='valine'></div>
   {% else %}
     <div id="comment-not-available">
@@ -22,7 +22,7 @@
     </div>
   {% endif %}
 {% elseif comment_system === 'gitment' %}
-  {% if site.data.cutie.gitment.client_secret %}
+  {% if default(site.data.cutie.gitment.client_secret) %}
     <div id='gitment'></div>
   {% else %}
     <div id="comment-not-available">
