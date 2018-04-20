@@ -1,0 +1,29 @@
+# As long as the name matches the font awesome icon name, you can add even more social links
+# As the tip: the social link can be a QRCODE link
+social:
+  github: https://github.com/zczzz
+  weibo: http://weibo.com/zczzzz
+
+global:
+  comment_system: valine # disqus, valine, gitment
+  scheme: Taurus
+  icon_set: blue-line
+  use_animation: true
+
+page_404:
+  tencent_404: false
+
+post:
+  allow_share: true
+  allow_modification: false
+  allow_commercial: false
+  use_lightgallery: true
+  allow_comment: true
+  toc_level: 2
+  enable_unread_badge: false
+  
+# valine configuration
+valine:
+  appId: m6Ko0jyFfdRo710mbgopOYpE-gzGzoHsz
+  appKey: o8Yfsa0bYi8jfzRT2ORVz07S
+  placeholder: 快发表你的评论吧～～
