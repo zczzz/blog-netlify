@@ -22,7 +22,7 @@
     </div>
   {% endif %}
 {% elseif comment_system === 'gitment' %}
-  {% if default(site.data.cutie.gitment.client_secret) %}
+  {% if site.data.cutie.gitment.client_secret %}
     <div id='gitment'></div>
   {% else %}
     <div id="comment-not-available">
