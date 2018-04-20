@@ -3,7 +3,7 @@
 <h1>{{ __('post.comment') }}</h1>
 {% if comment_system === 'valine' %}
   
-  {% if site.data.cutie.valine.appId %}
+  {% if default(site.data.cutie.valine.appId) %}
     <div id='valine'></div>
   {% else %}
     <div id="comment-not-available">
