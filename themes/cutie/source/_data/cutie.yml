@@ -1,3 +1,6 @@
+url: https://qutang.github.io/cutie/
+logo: /images/me.png
+slogan: To be a better me!
 # As long as the name matches the font awesome icon name, you can add even more social links
 # As the tip: the social link can be a QRCODE link
 social:
@@ -21,7 +24,7 @@ post:
   allow_comment: true
   toc_level: 2
   enable_unread_badge: false
-  
+
 # valine configuration
 valine:
   appId: m6Ko0jyFfdRo710mbgopOYpE-gzGzoHsz

@@ -1,19 +1,18 @@
 version: 2.0.10
 url: https://qutang.github.io/cutie/
-logo: /images/me.png
-slogan: To be a better me!
+logo: /images/theme-icon.svg
+slogan: Bazinga, theme cutie!
 # Configure navigation menu, provide a relative link and a path to icon (icon should better be square)
 
 # As long as the name matches the font awesome icon name, you can add even more social links
 # As the tip: the social link can be a QRCODE link
-social:
-  github: https://github.com/zczzz
-  weibo: http://weibo.com/zczzzz
 
 global:
   comment_system: valine # disqus, valine, gitment
-  scheme: Taurus
-  icon_set: blue-line
+  scheme: 
+    name: Taurus #Taurus
+    color: flower
+  icon_set: blue-shadow
   use_animation: true
 
 page_404:
@@ -27,7 +26,6 @@ post:
   allow_comment: true
   toc_level: 2
   enable_unread_badge: false
-
 
 changelog:
   v2.0.10:
