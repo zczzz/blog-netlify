@@ -32,6 +32,6 @@ post:
 #  placeholder: 快发表你的评论吧～～
 gitment:
   owner: zczzz
-  repo: blog-netlify
+  repo: https://github.com/zczzz/blog-netlify.git
   client_id: 87eb10f9d0dc4da6eea3
   client_secret: c334c6407147b8a5278b0372e43a9b84c979f36c
