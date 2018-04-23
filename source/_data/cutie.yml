@@ -27,6 +27,8 @@ post:
 
 # valine configuration
 valine:
+  notify: true
+  verify: true
   appId: m6Ko0jyFfdRo710mbgopOYpE-gzGzoHsz
   appKey: o8Yfsa0bYi8jfzRT2ORVz07S
   placeholder: 快发表你的评论吧～～
